@@ -70,7 +70,7 @@ class Single {
           System.out.println("Skill : " + temp.skill);
           System.out.println("Umur  : " + temp.umur);
           System.out.println("Hobi  : " + temp.hobi);
-          System.out.println("------------------------------");
+          System.out.println(" ");
           temp = temp.next;
         }
     }
@@ -81,22 +81,21 @@ public class OrangUnik {
     public static void main(String[] args) {
         Single list = new Single();
         
-        
-        list.addLast("Vadel", "Dance Geter", "19", "Dance");
-        list.addLast("Agus", "Agus Sakit", "35", "Donasi");
-        list.addLast("Fufu Fafa", "Roasting", "30", "Buka Kaskus");
-        System.out.println("\nsebelum add first");
+        list.addLast("Vadel", "Dance Geter", 19, "Dance");
+        list.addLast("Agus", "Agus Sakit", 35, "Donasi");
+        list.addLast("Loli", "ATM Berjalan", 16, "Liat Vadel");
+        list.addLast("Fufu Fafa", "Roasting", 30, "Buka Kaskus");
+
+        System.out.println("\nSebelum add kak gem");
         list.display();
         list.addFirst("Kak Gem", "Kasi Faham", 32, "Bernafas");
-
-        System.out.println("\nsetelah add");
+        System.out.println("\nSetelah add kak gem");
         list.display();
-
         list.deleteLast();
-
+        System.out.println("\nSetelah hapus fufufafa");
+        list.display();
         list.deleteFirst();
-
-        System.out.println("\n setelah delete:");
+        System.out.println("\nSetelah hapus kak gem / manusia yang tersisa");
         list.display();
     }
 }
